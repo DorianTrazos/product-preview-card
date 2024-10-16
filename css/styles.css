@@ -23,7 +23,128 @@ ul {
   margin-bottom: 0;
 }
 
+h1,
+h2,
+h3 {
+  font-family: 'Fraunces', serif;
+}
+
 body {
   margin: 0;
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f2eae2;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 16px;
+}
+
+@media screen and (width>768px) {
+  .main {
+    flex-direction: row;
+  }
+}
+
+.product-image {
+  border-radius: 10px;
+}
+
+@media screen and (width>768px) {
+  .product-image {
+    width: 320px;
+    border-radius: 10px 0 0 10px;
+  }
+}
+
+.card-info {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+@media screen and (width>768px) {
+  .card-info {
+    padding: 32px;
+    width: 300px;
+    border-radius: 0 10px 10px 0;
+  }
+}
+
+.title-span {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 5px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-top: 12px;
+  margin-bottom: 16px;
+}
+
+@media screen and (width>768px) {
+  .title {
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+}
+
+.text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  color: #6c7289;
+}
+
+@media screen and (width>768px) {
+  .text {
+    margin-top: 0;
+    margin-bottom: 29px;
+    font-size: 14px;
+  }
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 19px;
+  margin-bottom: 20px;
+}
+
+.big-text {
+  font-family: 'Fraunces', serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: #3d8168;
+}
+
+.small-text {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 23px;
+  color: #6c7289;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 92px;
+  border-radius: 8px;
+  background-color: #3d8168;
+}
+
+@media screen and (width>768px) {
+  .button-container {
+    padding: 15px 62px;
+  }
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
 }
